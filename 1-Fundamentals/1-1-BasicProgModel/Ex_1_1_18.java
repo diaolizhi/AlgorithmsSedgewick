@@ -19,8 +19,9 @@ public class Ex_1_1_18
     
     public static void main(String[] args)
     {
-        StdOut.println("Result: " + mystery1(5, 7));
+//    	ÌâÄ¿ÊÇ mystery(2, 25) mystery(3, 11)
+        StdOut.println("Result: " + mystery1(2, 25));
         StdOut.println();
-        StdOut.println("Result: " + mystery2(5, 7));
+        StdOut.println("Result: " + mystery2(2, 25));
     }
 }
