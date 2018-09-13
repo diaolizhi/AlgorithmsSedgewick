@@ -32,6 +32,9 @@ public class Ex_1_1_22a
     
     public static void main(String[] args)
     {
+//    	这里是通过文件来获得数组
+//    	对于 Eclipse：右击文件->Run As->Run Configureations
+//    	选择 Arguments，输入：tinyW.txt < tinyT.txt
         int[] whitelist = In.readInts(args[0]);
 
         Arrays.sort(whitelist);
@@ -39,6 +42,7 @@ public class Ex_1_1_22a
         // read key; print if not in whitelist
         while (!StdIn.isEmpty()) {
             int key = StdIn.readInt();
+            System.out.println(key);
             if (rank(key, whitelist) == -1)
                 StdOut.println(key);
         }
