@@ -37,7 +37,8 @@ public class Ex_1_1_39
     
     public static void main(String[] args)
     {
-        int t = Integer.parseInt(args[0]);
+//        int t = Integer.parseInt(args[0]);
+    	int t = 10;
         
         int[] ns = { 1000, 10000, 100000, 1000000 };
         

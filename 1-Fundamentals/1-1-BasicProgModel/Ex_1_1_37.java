@@ -13,8 +13,11 @@ public class Ex_1_1_37
     
     public static void main(String[] args)
     {
-        int m = Integer.parseInt(args[0]);
-        int n = Integer.parseInt(args[1]);
+//        int m = Integer.parseInt(args[0]);
+//        int n = Integer.parseInt(args[1]);
+    	
+    	int m = 10;
+    	int n = 1000000;
         
         // closure
         Ex_1_1_36.IShuffle shuffle = new Ex_1_1_36.IShuffle()
