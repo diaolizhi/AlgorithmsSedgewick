@@ -1,5 +1,5 @@
 
-public class Ex_1_2_2 {
+public class Ex_1_2_02 {
 
 	public static void main(String[] args) {
 
