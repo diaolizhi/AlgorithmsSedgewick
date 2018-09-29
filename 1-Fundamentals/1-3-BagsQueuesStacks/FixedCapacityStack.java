@@ -26,6 +26,8 @@ public class FixedCapacityStack<Item> implements Iterable<Item> {
         a = (Item[]) new Object[capacity];   // no generic array creation
     }
 
+//    Ex_1_3_1 要求添加的方法
+    public boolean isFull()		{return N == a.length;}
     public boolean isEmpty()          {  return (N == 0);                  }
     public void push(Item item)       {  a[N++] = item;                    }
     public Item pop()                 {  return a[--N];                    }

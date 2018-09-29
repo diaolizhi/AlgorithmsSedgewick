@@ -15,7 +15,9 @@ public class Ex_1_3_09
 {
     public static void main(String[] args)
     { 
+//    	²Ù×÷·û
         Stack<String> ops  = new Stack<String>();
+//        Öµ
         Stack<String> vals = new Stack<String>();
 
         while (!StdIn.isEmpty())

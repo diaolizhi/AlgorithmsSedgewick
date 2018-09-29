@@ -4,6 +4,13 @@ public class Transaction_my implements Comparable<Transaction_my>{
 	private String who;
 	private Date when;
 	private double amount;
+	
+	public Transaction_my(String string) {
+		String[] strs = string.split(" ");
+		this.who = strs[0];
+		this.when = new Date(strs[1]);
+		this.amount = Double.parseDouble(strs[2]);
+	}
 
 	public Transaction_my(String who, Date when, double amount) {
 		this.who = who;
