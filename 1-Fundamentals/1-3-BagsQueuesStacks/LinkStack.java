@@ -107,5 +107,32 @@ public class LinkStack<Item> implements Iterable<Item>{
 		in.close();
 		
 	}
+	
+	public void display() {
+		Node node = first;
+		for(int i=0; i<N; i++) {
+			System.out.print(node.item + " ");
+			node = node.next;
+		}
+		System.out.println();
+	}
+	
+//	Ex_1_3_12
+//	接受 一个字符串的栈，并返回该栈的一个副本
+	public static LinkStack<String> copy(LinkStack<String> stack) {
+		LinkStack<String> newStack = new LinkStack<String>();
+		String strings[] = new String[stack.size()];
+		int i = 0;
+//		如果出栈之后马上放入新的堆栈，那么顺序就是反过来的，所以这里先放入一个数组中。
+		for(String string : stack) {
+			strings[i] = string;
+			i++;
+		}
+		for(i=stack.size()-1; i>=0; i--) {
+			newStack.push(strings[i]);
+		}
+		return newStack;
+	}
+
 
 }
